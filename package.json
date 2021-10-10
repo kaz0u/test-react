@@ -1,0 +1,39 @@
+{
+  "name": "test-react",
+  "description": "",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlariviere/test-react.git"
+  },
+  "author": "Thibaud LARIVIERE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlariviere/test-react/issues"
+  },
+  "homepage": "https://github.com/tlariviere/test-react#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@svgr/webpack": "^5.5.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.4.0",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
