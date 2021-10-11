@@ -1,0 +1,138 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prefer-arrow"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "rules": {
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "no-console": "off",
+    "max-len": [
+      "error",
+      100,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": false,
+        "ignoreTemplateLiterals": false
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "no-underscore-dangle": "off",
+    "prefer-arrow-callback": "error",
+    "func-style": [
+      "error",
+      "expression"
+    ],
+    "prefer-arrow/prefer-arrow-functions": [
+      "error",
+      {
+        "disallowPrototype": true,
+        "singleReturnOnly": false,
+        "classPropertiesAllowed": false,
+        "allowStandaloneDeclarations": false
+      }
+    ],
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-ignore": "allow-with-description"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.test.ts"
+        ],
+        "optionalDependencies": false
+      }
+    ],
+    "@typescript-eslint/no-floating-promises": [
+      "error",
+      {
+        "ignoreIIFE": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".ts",
+          ".tsx",
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "functions": true,
+        "classes": true,
+        "variables": true,
+        "enums": true,
+        "typedefs": true
+      }
+    ]
+  },
+  "settings": {
+    "jest": {
+      "version": 27
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  }
+}
